@@ -2,6 +2,7 @@ from langchain_core.runnables import RunnablePassthrough, RunnableLambda
 from langchain_core.messages import HumanMessage, ToolMessage, SystemMessage
 from amazon_tools import *
 from langchain_groq import ChatGroq
+import json
 
 tool_mapping = {tool.name: tool for tool in tools}
 
